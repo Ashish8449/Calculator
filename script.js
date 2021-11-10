@@ -10,7 +10,7 @@ for (item of buttons) {
     if (buttonText == "x") {
       buttonText = "*";
       screen.value += buttonText;
-      value += buttonText;
+      value = `(${value})` + buttonText;
     } else if (buttonText == "=") {
       screen.value = eval(value);
     } else if (buttonText == "C") {
